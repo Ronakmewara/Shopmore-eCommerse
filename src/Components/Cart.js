@@ -154,7 +154,7 @@ export const Cart = ({ cart, isAuthenticated, onDelete, addQty , substractQty, p
                     
                         <div className="payable-amount  d-flex flex-row justify-content-around">
                           <span>Payable Amount : </span>
-                          <span><b> &#x20B9;{Total}/-</b></span>
+                          <span><b> &#x20B9;{Total - shippingDiscount}/-</b></span>
                         </div>
                     {/* <li style={{borderBottom:"1px dotted black", paddingBottom:"15px"}}> Shipping Discount : <b style={{marginLeft:"70px"}}>/- </b> </li> */}
                     {/* <li> <b> Payable Amount  : <span style={{marginLeft:"50px"}}>&#x20B9;{Total}/-</span></b> </li> */}
@@ -166,9 +166,7 @@ export const Cart = ({ cart, isAuthenticated, onDelete, addQty , substractQty, p
             </div> : <h2 className="text-center" style={{margin:"150px auto"}}> Your Cart is Empty !</h2>   }
              
       </> : <div className = "d-flex justify-content-center align-items-center" style={{height:"50vh", width:"100vw"}} ><h1> Please Login To Access The Cart!</h1> </div>}
-      <div style={{width:"100vw", border:"1px black solid"}} className="brdr my-4 ">
-
-      </div>
+       
       <Footer/>
     </div>
   );

@@ -19,10 +19,10 @@ export const Navbar =  ({cart,isAuthenticated, user}) => {
   
   return (
     <div>
-      {showmobilenav? (<div className="mob-navbar d-flex  flex-column gap-5" style={{height:"80vh", width:"100vw", position:"fixed", zIndex:"999" }}>
+      {showmobilenav? (<div className="mob-navbar d-flex flex-column gap-5" style={{height:"80vh", width:"100vw", position:"fixed", zIndex:"999" }}>
         <div className="mob-navbar-upper d-flex flex-row align-items-center justify-content-between" style={{   height:"40px", padding:"40px 20px 0 20px"}}>
 
-      <span className='p-2 ' style={{fontSize:"larger", color:"white", border:"1px gray solid"}}> SHOPMORE</span>
+      <span className='p-2 bg-warning text-black rounded' style={{fontSize:"larger", color:"white", border:"1px gray solid"}}> SHOPMORE</span>
       <div className="bars-menu">
                 <button className='btn' style={{fontSize:"bold"}} onClick={() => setshowmobilenav(!showmobilenav)}><i className="fa-solid fa-xmark" style={{color: "#ffffff",fontSize:"x-large"}}></i></button>
               </div>
@@ -48,7 +48,7 @@ export const Navbar =  ({cart,isAuthenticated, user}) => {
              
             
               <div className="center-Shopmore">
-                <span className='p-2' style={{fontSize:"larger", border:"1px gray solid"}}> SHOPMORE</span>
+                <span className='p-2  pointer-cursor bg-warning text-black rounded border-none' style={{fontSize:"larger",  }}> SHOPMORE</span>
               </div>
               <div className="home-cart d-flex flex-row align-items-center gap-5 ">
               <div className="navbar-content home d-flex flex-row gap-5">

@@ -2,7 +2,9 @@ import React from 'react'
 
 export const Footer = () => {
   return (
-    <div className='footer d-flex container flex-row flex-wrap justify-content-around'> 
+    <div className="outer-footer w-100 border border-top ">
+
+    <div className='footer d-flex pt-5 container flex-row flex-wrap justify-content-around'> 
         <div className="footer1 d-flex flex-column gap-3">
             <ul className='text-center' style={{padding:"5px" , borderRadius:"3px" , border:"1px solid black"}}>
                 <li> USEFULL LINKS</li>
@@ -27,6 +29,7 @@ export const Footer = () => {
          </ul>
 
         </div>
+    </div>
     </div>
   )
 }

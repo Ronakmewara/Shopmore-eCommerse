@@ -10,7 +10,7 @@ export const Discover = () => {
              
             
         </div>
-        <div className="  category d-flex flex-wrap my-4 gap-3 flex-row">
+        <div className="  category d-flex justify-content-center flex-wrap my-4 gap-3 flex-row">
             <div className="men position-relative">
                 <img className='img1' style={{width:"100%", height:"100%", objectFit:"cover", backgroundRepeat:"no-repeat"}} src={men} alt="" />
                 <div className="forhimshop position-absolute him d-flex align-items-center flex-column" style = {{   top:"41%", right:"41%"}}>
@@ -25,18 +25,13 @@ export const Discover = () => {
                 <div className="forhimshop position-absolute her d-flex align-items-center flex-column" style = {{   top:"41%", right:"41%"}}>
 
                      
-                    <button className= "forbtn">  FOR HER</button>
+                    <button className= "forbtn">FOR HER</button>
                     </div>
-          
             </div>
 
         </div>
         
-        <div className="descoversec my-5 ">
-            <h2> POPPULAR PRODUCTS</h2> 
-             
-            
-        </div>
+      
     </div>
   )
 }

@@ -1,4 +1,4 @@
-import React from "react";
+import React  from "react";
 import { Link } from "react-router-dom";
 import shopnow from "../images/june Wallpaper.jpg";
  
@@ -9,6 +9,9 @@ import Footer from "../Homepage-Components/Footer";
  
 
 export const Herosection = ({ cart }) => {
+  
+   
+  
   return (
     <div>
       <div
@@ -41,8 +44,8 @@ export const Herosection = ({ cart }) => {
         </div>
       </div>
       <Discover />
-      <Collection cart={cart} />
       <Tshirtsale />
+      <Collection cart={cart} />
       <Footer />
        
     </div>

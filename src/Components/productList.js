@@ -106,7 +106,7 @@ import Footer from '../Homepage-Components/Footer';
             <div className="popup">
                 <p> Item Added to the cart ! </p>
             </div> </div>}
-            <div className="empty my-4"  style={{width:"100vw",border:"1px solid black"}}></div>
+           
             <Footer/>
      
         
