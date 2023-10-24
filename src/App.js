@@ -10,7 +10,7 @@ import ProductList from "./Components/productList";
  import lightblue from "./images/lightblue-tshirt.jpg";
  import important from "./images/important-tshirt.jpg";
  import alwaysinsp from "./images/always-blue.jpg";
-  
+  import { About } from './Components/About';
  import plainwhite from "./images/plaine-white.jpg";
  import wateris from "./images/waterislife.jpg";
  import redmarlon from "./images/redtment.jpg";
@@ -22,6 +22,7 @@ import Cart from './Components/Cart';
 import Navbar from './Components/Navbar';
 import Productpage from './Components/Productpage';
 import { useAuth0 } from "@auth0/auth0-react";
+ 
   
 
 
@@ -196,7 +197,7 @@ const substractQty = (itemId) =>{
         <Route exact path = "/productlist" element = {<ProductList products = {products}    addToCart = {addToCart}  openProduct = {openProduct} showpopup = {showpopup}      />}  /> 
         <Route exact path = "/cart" element = {<Cart isAuthenticated={isAuthenticated} cart = {cart} setcart = {setcart}  onDelete={handleDelete} addQty={addQty} substractQty={substractQty}       />}/>
         <Route exact path = "/productpage" isAuthenticated={isAuthenticated} element = {<Productpage  clickedProduct = {clickedProduct} addToCart = {addToCart}   showpopup = {showpopup}/>  }/>
-       
+        <Route exect path='/about' element ={<About/>} />
 
       </Routes>
 
